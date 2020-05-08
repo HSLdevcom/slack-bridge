@@ -9,10 +9,10 @@
         <!-- lookup parent from repository -->
     </parent>
     <groupId>fi.hsl</groupId>
-    <artifactId>hsl-monitoring</artifactId>
+    <artifactId>slack-bridge</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hsl-monitoring</name>
-    <description>Demo project for Spring Boot</description>
+    <name>slack-bridge</name>
+    <description>Spring Boot slack-bridge</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -56,7 +56,7 @@
                 <version>1.8.0</version>
                 <configuration>
                     <schemaVersion>V2</schemaVersion>
-                    <resourceGroup>${env.AZURE_RESOUCE_GROUP}</resourceGroup>
+                    <resourceGroup>${env.AZURE_RESOURCE_GROUP}</resourceGroup>
                     <appName>${env.APP_NAME}</appName>
                     <pricingTier>B1</pricingTier>
                     <region>westeurope</region>
